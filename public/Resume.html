@@ -5,32 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achu Resume</title>
     <style>
-        #div0{
-            width: 70%;
-            height:100%;
-            display: inline-block;
+         #div0{
+            width: 50%;
+            height: 80%;
+            /* float: left; */
+        } 
+        #main{
+            display: flex;
+            gap: 20px;
         }
         #div1{
-            display: inline-block;
-            width:20%;
-            height:100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
         }
+        img{
+            float: left;
+            width:300px;
+            height:300px
+        }
+       h2{
+        clear:left;
+        border:1px solid rgb(30, 11, 11);
+        padding: 3px;
+       }
+       #name{
+        font-size: 150px;
+        margin:0px;
+       }
+       #job-title{
+        z-index: 0;
+    /* position: ; */
+    bottom: 270px;
+    color: whitesmoke;
+    left: 20px;
+    background-color: rgb(54, 37, 70);
+    margin :0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    font-size: 20px;
+    font-family: cursive;
+       }
+    .main{
+        display:flex;
+        flex-direction: column;
+    }
+    .outermain{
+        display:flex;
+    }
     </style>
     <link rel="stylesheet" href="../public/style.css">
 </head>
 <body>
-    <div id="div0">
-    <img src="../assets/images/IMG-20190423-WA0014.jpg" alt="my profile " height="100"> <h1 style="display: inline;">Achyuth Salwa</h1>
+    <div class="outermain">
+    <div class="main">
+    <img src="../assets/images/IMG-20190423-WA0014.jpg" alt="my profile " height="100"> 
+    <h3 id="job-title">Java and PL/SQL Developer</h3>
+    </div>
+    <h1 id="name">ACHYUTH SALWA</h1>
+    </div>
+    <div id="main">
+        <div id="div0">
     <h2>Summary</h2>
     <hr>
     <p>I am a software Engineer with 2+ years of experience with proficient knowledge on Java,sql,pl/sql. I am ready to work in a challenging position which enables to learn new skills and use my skills for the betterment of organization and me. </p>
     <h2>Experience</h2>
     <hr>
-    <h4>Associate Software Engineer</h4> <h5>Virtusa consulting services pvt ltd</h5>
+    <h4>Associate Software Engineer</h4>
+     <h5>Virtusa consulting services pvt ltd</h5>
     <h5>June 2022 – Present</h5>
 <hr>
 <h4>PL/SQL Database Developer Intern</h4>
-<h4>Virtusa consulting services pvt ltd</h4>
+<h5>Virtusa consulting services pvt ltd</h4>
 <h5>Dec 2021 - Mar 2022</h5>
 <hr>
 <h2>Projects</h2>
@@ -65,7 +112,7 @@ procedures, functions, triggers, and collections.</p>
     personal details and semester results, with admin privileges for
     linking results to profiles</p>
 </div>
-<div id="#div1">
+<div id="div1">
     <h2>Education Qualification</h2>
     <img src="../assets/images/IMG-20190423-WA0014.jpg" alt="my profile " height="100"> <h1 style="display: inline;">Achyuth Salwa</h1>
     <h2>Summary</h2>
@@ -86,6 +133,7 @@ procedures, functions, triggers, and collections.</p>
 <p>java, pl/sql, servlets, jsp, html, css, javascript</p>
 <h5>December 2022 – Present</h5>
 <p>
+</div>
 </div>
 </body>
 </html>

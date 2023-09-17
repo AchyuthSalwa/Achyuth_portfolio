@@ -1,0 +1,13 @@
+.div1{
+    width: 50%;
+    margin-left: 25%;
+    color: white;
+    margin-top: 10%;
+}
+#img1{
+ width: 100%;
+ border: 10px solid white;
+}
+html{
+    background-color: black;
+}
