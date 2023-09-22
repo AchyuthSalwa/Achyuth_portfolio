@@ -5,24 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achu Resume</title>
     <style>
-         #div0{
-            width: 50%;
-            height: 80%;
-            /* float: left; */
+        
+        
+        .main1{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            /* width:100%; */
+            /* justify-content: space-between; */
+            gap: 10px;
+            background-color:rgb(220, 220, 220,1);
+            
+        }
+         /* #div0{
+            width: 100%;
+            display: flex;
+             flex-direction: column; } */
+
+         .main1>*{
+            /* flex: 1;
+             */
+            border: 1px solid black;
+            /* flex:1; */
+            /* height: 100px; */
+            /* height:min-content */
+            /* flex-wrap: nowrap; */
+            /* flex-basis: 50%;
+            flex:1 ;
+            /* background-color: aliceblue; */
         } 
-        #main{
-            display: flex;
-            gap: 20px;
-        }
-        #div1{
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-        }
         img{
-            float: left;
+            /* float: left; */
             width:300px;
-            height:300px
+            height:300px;
         }
        h2{
         clear:left;
@@ -32,6 +47,16 @@
        #name{
         font-size: 150px;
         margin:0px;
+        background-color:rgba(25, 12, 36, 0.877); 
+        color: whitesmoke;
+        /* width:100%; */
+        /* justify-content: flex-end; */
+        flex-basis: 100%;
+        text-align: center;
+        /* margin-top: ; */
+        padding-top: 70px ;
+        /* align-self: center; */
+        /* align-items: end; */
        }
        #job-title{
         z-index: 0;
@@ -39,20 +64,39 @@
     bottom: 270px;
     color: whitesmoke;
     left: 20px;
-    background-color: rgb(54, 37, 70);
+    /* background-color: rgb(54, 37, 70); */
     margin :0px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 15px;
     font-size: 20px;
     font-family: cursive;
+    /* justify-self: center; */
+
        }
     .main{
         display:flex;
         flex-direction: column;
+        background-color: rgba(25, 12, 36, 0.877);;
+    }
+    .main>h3{
+        flex-basis: 100%;
+        align-self: center;
     }
     .outermain{
         display:flex;
+        justify-content: space-between;
+        /* flex-basis: 100%; */
+        /* gap:30px; */
+        /* background-color: rgba(25, 12, 36, 0.877); */
+        /* align-items: center; */
+        /* height:100%; */
+
+        /* justify-content: stretch; */
+    }
+    .divimg{
+        display:flex;
+        flex-direction: column;
     }
     </style>
     <link rel="stylesheet" href="../public/style.css">
@@ -63,9 +107,9 @@
     <img src="../assets/images/IMG-20190423-WA0014.jpg" alt="my profile " height="100"> 
     <h3 id="job-title">Java and PL/SQL Developer</h3>
     </div>
-    <h1 id="name">ACHYUTH SALWA</h1>
+    <span id="name">ACHYUTH SALWA</span>
     </div>
-    <div id="main">
+    <div class="main1">
         <div id="div0">
     <h2>Summary</h2>
     <hr>
@@ -114,7 +158,7 @@ procedures, functions, triggers, and collections.</p>
 </div>
 <div id="div1">
     <h2>Education Qualification</h2>
-    <img src="../assets/images/IMG-20190423-WA0014.jpg" alt="my profile " height="100"> <h1 style="display: inline;">Achyuth Salwa</h1>
+   <div class="divimg"><img src="../assets/images/IMG-20190423-WA0014.jpg" alt="my profile " height="100"> <h1 style="display: inline;text-align: center;width:400px">Achyuth Salwa</h1></div>
     <h2>Summary</h2>
     <hr>
     <p>I am a software Engineer with 2+ years of experience with proficient knowledge on Java,sql,pl/sql. I am ready to work in a challenging position which enables to learn new skills and use my skills for the betterment of organization and me. </p>

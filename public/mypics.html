@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my pics</title>
+    <style>
+        .imgout{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            /* height: 100vh; */
+            flex-basis: 200px;
+            justify-content: center;
+        }
+        .imgcontainer{
+            display:flex;
+            list-style: none;
+            justify-content: center;
+            gap:30px;
+            /* height:100vh; */
+            align-items: center;
+
+        }
+        h1{
+            /* text-align: center; */
+            font-family: cursive;
+            background-color: rgba(51, 32, 56, 0.628);
+            display: flex;
+            justify-content: center;
+        }
+        h4{
+            text-align: center;
+            font-family: cursive;
+            color: black;
+        }
+        @media(max-width:1200px)
+        {
+            .imgcontainer{
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+            /* height: 100vh; */
+        }
+        }
+    </style>
+    
 </head>
 <body>
+    <div class="imgout">
     <h1>Welcome to my pictures</h1>
-    <ul><li><img src="../assets/images/IMG-20190423-WA0014.jpg" alt="pic1" height="200"></li><li><img src="../assets/images/IMG-20200305-WA0058.jpg" alt="pic2" height="350"></li><li><img src="../assets/images/IMG-20200807-WA0067.jpg" alt="pic3" height="250"></li></ul>
+    <div class="imgcontainer">
+        <li><img src="../assets/images/IMG-20190423-WA0014.jpg" alt="pic1" height="200"></li><li><img src="../assets/images/IMG-20200305-WA0058.jpg" alt="pic2" height="350"></li><li><img src="../assets/images/IMG-20200807-WA0067.jpg" alt="pic3" height="250"></li>
+    </div>
     <h4><a href="../index.html">go back</a></h4>
+</div>
 </body>
 </html>
