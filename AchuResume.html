@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achu Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family : Georgia, 'Times New Roman', Times, serif;
+            font-size: small;
+        }
+
+        #name {
+            font-size: 2.5rem;
+            margin: 0;
+            /* background-color: rgba(25, 12, 36, 0.877); */
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px 0;
+            font-family :Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #job-title {
+            color: whitesmoke;
+            font-size: 1.2rem;
+            font-family: cursive;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .main-header {
+            /* background-color: rgba(25, 12, 36, 0.877); */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(to right, #2e1e3e, #a09baa, #1a0f25); /* Violet gradient */
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            border-left: 5px solid #333;
+            padding-left: 10px;
+            margin-top: 30px;
+            font-size: 1.5rem;
+            background-color: #b2bde7;
+        }
+
+        h4{
+            background-color: aliceblue;
+            font-size:medium;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .content-section {
+            padding: 20px;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 767px) {
+            #name {
+                font-size: 1.8rem;
+            }
+
+            .main-header {
+                padding: 10px;
+            }
+
+            .content-section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <img src="./image/AchuPic2.jpg" alt="my profile" class="profile-img">
+        <div id="job-title">Java and PL/SQL Developer</div>
+        <div id="name">ACHYUTH SALWA</div>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-section">
+                    <h2>Summary</h2>
+                    <p>I am a software Engineer with 3+ years of experience with proficient knowledge on Java, SQL, PL/SQL. I am ready to work in a challenging position which enables learning new skills and using them for organizational and personal growth.</p>
+
+                    <h2>Experience</h2>
+                    <h4>Associate Software Engineer</h4>
+                    <h5>Virtusa Consulting Services Pvt Ltd</h5>
+                    <h6>June 2022 – Present</h6>
+
+                    <h4>PL/SQL Database Developer Intern</h4>
+                    <h5>Virtusa Consulting Services Pvt Ltd</h5>
+                    <h6>Dec 2021 – Mar 2022</h6>
+
+                    <h2>Projects</h2>
+                    <h4>Credit Platform</h4>
+                    <p>Tech: Java, PL/SQL, Servlets, JSP, HTML, CSS, JavaScript</p>
+                    <p>Developed modules for facility generation and collateral monitoring in a credit platform for high-net-worth individuals.</p>
+
+                    <h4>Airlines Database Design</h4>
+                    <p>Tech: SQL, PL/SQL, SQL*Plus</p>
+                    <p>Built schema and optimized airline reservation queries using PL/SQL packages, triggers, and collections.</p>
+
+                    <h4>Missing Person Identification Using Face Recognition</h4>
+                    <p>Tech: Python, Flask, OpenCV, HOG Algorithm</p>
+                    <p>Implemented facial recognition to detect missing persons from CCTV feeds and enable user-assisted reporting.</p>
+
+                    <h4>Student Profile Management System</h4>
+                    <p>Tech: PHP, XAMPP, HTML, CSS, Bootstrap</p>
+                    <p>Created a centralized web portal for managing student academic profiles and semester results with admin access.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="content-section">
+                    <h2>Education Qualification</h2>
+                    <ul>
+                        <li>B.Tech in Computer Science and Engineering – XYZ University – 2022</li>
+                        <li>Intermediate – Sai Jyothi Junior College – 2018</li>
+                        <li>SSC – Jnana Jyothi Vidya Mandir  – 2016</li>
+                    </ul>
+
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Languages: Java, SQL, PL/SQL</li>
+                        <li>Web Technologies: HTML, CSS, JavaScript, JSP, Servlets</li>
+                        <li>Tools: Eclipse, SQL Developer, Git, XAMPP</li>
+                        <li>Frameworks: Bootstrap, Flask</li>
+                    </ul>
+
+                    <h2>Certifications</h2>
+                    <ul>
+                        <li>Oracle PL/SQL Developer Certified Associate</li>
+                        <li>Java SE 11 Developer Certification</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
