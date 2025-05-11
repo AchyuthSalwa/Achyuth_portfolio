@@ -1,78 +1,427 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achyuth's world</title>
-    <style>
-        .indexcontainer{
-            display:flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-around; 
-              }
-        .indexcontainer>*{
-            flex-basis: 50px;
-            
-        }
-        h2{
-            text-align: center;
-        }
-        .maincont{
-            display: flex;
-            gap:30px;
-            justify-content:space-evenly;
-        }
+<html>
+  <head>
+    <title>My Name</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="body-header">
+      <nav>
+        <ul class="horizontal-list text-center nav-menu">
+          <li>
+            <a href="#"> Home </a>
+          </li>
+          <li>
+            <a href="#about"> About </a>
+          </li>
+          <li>
+            <a href="#skills"> Skills </a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-        .maincont>*{
-            flex-basis: 400px;
-        }
-        .indexcontainer2{
-            display: flex;
-            flex-direction: column;
+      <div id="name-social-container">
+        <div class="text-center">
+          <h1 id="my-name" display="inline-block">Achyuth Salwa</h1>
+        </div>
+        <div>
+          <ul class="horizontal-list text-center social-icons">
+            <li>
+              <a href="http://linkedin.com/in/achyuth-salwa-37398b213">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/AchyuthSalwa">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <div id="my-image">
+          <img
+            src="./image/Achu_Pic.jpeg"
+          />
+        </div>
 
-        }
-        .gridcont{
-            display: grid;
-            grid-template-rows: 1fr 2fr 1fr;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            /* border:10px solid grey; */
-        }
-        .li4{
-            grid-column: span 2;
-            font-weight: bold;
-            gap:10px;
-            /* display:flex;
-            justify-content: center; */
-        }
-        li{
-            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-             */
-            list-style: none;
-            /* background-color: #f4ecec80; */
-        }
-    </style>
-    <link rel="stylesheet" href="./public/style.css">
-</head>
-<body>
-    <h1>Welcome to Achyuth Porfolio</h1>
-    <div class="maincont">
-    <div class="indexcontainer">
-    <h2>What this portfolio contains</h2>
-    <div class="gridcont"><li class="li1"><a href="./public/personal_details.html">personal details</a></li><li>Academic details</li><li class="li4">skills <ul><li>Technical skills</li><li>Other skills</li></ul></li><li>Achievements</li><a href="./public/mypics.html"><li>My pics</li></a></div>
-    </div>
-    <div class="indexcontainer2">
-    <h2>Projects I did</h2>
-    <h3><a href="./public/Resume.html">My Resume</a></h3>
-    <img src="" alt="Resume">
-    <h3><a href="./public/Motivation.html">My principle</a></h3>
-  </div>
-</div>
-    <!-- <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-    <img src="./assets/images/Screenshot 2023-08-30 231257.png" alt="Rankings" height="200">
-    <h3><a href="./public/birthday-invite.html">Birthday Invite</a></h3>
-    <img src="./assets/images/Screenshot 2023-08-30 231452.png" alt="Rankings" height="200"> -->
-</body>
+        <div id="about-para">
+          <p>
+            I am a Java and PL/SQL Developer with expertise in Spring Boot, Servlets, JSP, Oracle PL/SQL and Oracle SQL. With a strong academic background <span class="text-highlight">(9.6 CGPA in B.Tech CSE) </span> and certifications like Oracle Database SQL Certified Associate (1Z0-071), I have demonstrated proficiency in <span class="text-highlight">backend development, database design, and problem-solving.</span>
+            Currently working as an Associate Software Engineer at Virtusa, I have contributed to enterprise credit platforms and database-driven applications. My projects include <span class="text-highlight">Missing Person Identification using Face Recognition, Airlines Database Design,Credit Platform and a Student Profile Management System.</span>            
+            With a passion for data structures, algorithms, and full-stack development 🚀.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h1 class="section-heading mb75px">
+          <span>
+            <i class="fas fa-chalkboard-teacher"></i>
+          </span>
+          <span> SKILLS </span>
+        </h1>
+
+        <div class="skills-display">
+          <div class="skill-progress">
+            <div class="fifty-percent mb-blue">
+              <div class="skill-name">
+                <span> Java </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress">
+            <div class="eighty-five-percent mb-orange">
+              <div class="skill-name">
+                <span> HTML </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress">
+            <div class="eighty-percent mb-light-purple">
+              <div class="skill-name">
+                <span> CSS </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress">
+            <div class="fifty-percent mb-teal">
+              <div class="skill-name">
+                <span> Javascript </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress">
+            <div class="fifty-percent mb-blue">
+              <div class="skill-name">
+                <span> PL/SQL </span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-progress">
+            <div class="eighty-percent mb-light-purple">
+              <div class="skill-name">
+                <span> SpringBoot </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h1 class="section-heading mb75px">
+          <span>
+            <i class="fas fa-briefcase"></i>
+          </span>
+          <span> Work Experience </span>
+        </h1>
+
+        <div class="timeline">
+          <div class="timeline-box">
+            <div class="timeline-container">
+              <div class="timeline-logo">
+                <img
+                  src="./image/Virtusa_Building.jpg"
+                />
+              </div>
+              <h3 class="experience-designation m0 m-blue">Engineer</h3>
+              <h4 class="experience-company-name">Virtusa Consulting Services</h4>
+              <h5 class="experience-duration m0">Jun 2022 -  Present</h5>
+
+              <p class="experience-description text-align-justify">
+                <span class="text-highlight">Credit Platform Development:</span> Contributed to a credit management application for high-net-worth individuals using Java, Spring Boot, PL/SQL, Servlets, and JSP, focusing on facility generation and collateral monitoring.
+                <br><span class="text-highlight">Database Optimization:</span> Designed and optimized PL/SQL procedures, functions, and triggers to enhance database performance, ensuring efficient data handling and transaction management.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-box right">
+            <div class="timeline-container">
+              <div class="timeline-logo">
+                <img
+                  src="./image/Virtusa_Building.jpg"
+                />
+              </div>
+              <h3 class="experience-designation m0 m-blue">Intern Trainee</h3>
+              <h4 class="experience-company-name">Virtusa Consulting Services</h4>
+              <h5 class="experience-duration m0">Dec 2021 - Mar 2022</h5>
+              <p class="experience-description text-align-justify">
+                <span class="text-highlight">Airlines Database System:</span> Designed and optimized an airline reservation database using SQL, PL/SQL, and SQL*Plus, implementing schema design, normalization, procedures, functions, triggers, and collections for efficient passenger reservations.
+                <br><span class="text-highlight">PL/SQL Development:</span> Developed and tested stored procedures, functions, and triggers, improving data integrity and streamlining database operations.
+              </p>
+            </div>
+          </div>
+
+
+          <div id="timeline-divider">
+            <div class="timeline-traveller">
+              <div>
+                <i class="fas fa-plane"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h1 class="section-heading mb75px">
+          <span>
+            <i class="fas fa-graduation-cap"></i>
+          </span>
+          <span> Education </span>
+        </h1>
+
+        <div class="timeline">
+          <div class="timeline-box left">
+            <div class="timeline-container">
+              <div class="timeline-logo">
+                <img
+                  src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png"
+                />
+              </div>
+              <div class="timeline-box left">
+                <div class="timeline-container">
+                  <div class="timeline-logo">
+                    <img
+                      src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png"
+                    />
+                  </div>
+                  <h3 class="experience-designation m0 m-blue">B.Tech in Computer Science and Engineering</h3>
+                  <h4 class="experience-company-name">Siddartha Institute Of Science And Technology</h4>
+                  <h5 class="experience-duration m0">July 2018 - June 2022</h5>
+                  <p class="experience-description text-align-justify">
+                    Graduated with a CGPA of 9.6/10, gaining expertise in Java, PL/SQL, Spring Boot, and database management. 
+                    Completed multiple projects in web development and software engineering.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="timeline-box right">
+                <div class="timeline-container">
+                  <div class="timeline-logo">
+                    <img
+                      src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png"
+                    />
+                  </div>
+                  <h3 class="experience-designation m0 m-blue">Intermediate (MPC)</h3>
+                  <h4 class="experience-company-name">Sri Sai Jyothi Junior College</h4>
+                  <h5 class="experience-duration m0">June 2016 - May 2018</h5>
+                  <p class="experience-description text-align-justify">
+                    Achieved 97% in MPC, building a strong foundation in Mathematics, Physics, and Chemistry, which helped in problem-solving and logical thinking for software development.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="timeline-box left">
+                <div class="timeline-container">
+                  <div class="timeline-logo">
+                    <img
+                      src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png"
+                    />
+                  </div>
+                  <h3 class="experience-designation m0 m-blue">Class X (SSC)</h3>
+                  <h4 class="experience-company-name">Jnana Jyothi Vidya Mandir</h4>
+                  <h5 class="experience-duration m0">June 2016</h5>
+                  <p class="experience-description text-align-justify">
+                    Secured 98% in SSC, demonstrating excellence in academics and developing analytical skills that laid the foundation for my technical journey.
+                  </p>
+                </div>
+              </div>
+              
+          <div id="timeline-divider">
+            <div class="timeline-traveller">
+              <div>
+                <i class="fas fa-car-side"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h1 class="section-heading mb75px">
+          <span>
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span> Portfolio </span>
+        </h1>
+
+        <div id="portfolio-container">
+          <div class="portfolio-image-container">
+            <img
+              src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png"
+            />
+            <div class="portfolio-details">
+              <p>Write here basic details about the project.</p>
+            </div>
+          </div>
+          <div class="portfolio-image-container">
+            <img
+              src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000026_1550237353_project_2.jpeg"
+            />
+            <div class="portfolio-details">
+              <p>Write here basic details about the project.</p>
+            </div>
+          </div>
+          <div class="portfolio-image-container">
+            <img
+              src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000029_1550237386_project.jpeg"
+            />
+            <div class="portfolio-details">
+              <p>Write here basic details about the project.</p>
+            </div>
+          </div>
+          <div class="portfolio-image-container">
+            <img
+              src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000027_1550237355_project_3.png"
+            />
+            <div class="portfolio-details">
+              <p>Write here basic details about the project.</p>
+            </div>
+          </div>
+          <div class="portfolio-image-container">
+            <img
+              src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png"
+            />
+            <div class="portfolio-details">
+              <p>Write here basic details about the project.</p>
+            </div>
+          </div>
+          <div class="portfolio-image-container">
+            <img
+              src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000028_1550237365_tree.jpeg"
+            />
+            <div class="portfolio-details">
+              <p>Write here basic details about the project.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1 class="section-heading mb50px">
+          <span>
+            <i class="far fa-address-card"></i>
+          </span>
+          <span> Contact </span>
+        </h1>
+        <div id="contact-container">
+          <div id="contact-form-container">
+            <form id="contact-form">
+              <input
+                id="input-name"
+                name="name"
+                type="text"
+                placeholder="Your Name"
+              />
+              <input
+                id="input-email"
+                name="input-email"
+                type="text"
+                required
+                placeholder="Your Email"
+              />
+              <textarea
+                id="input-message"
+                name="input-message"
+                rows="2"
+                cols="40"
+                placeholder="Message"
+              ></textarea>
+              <button class="sub-btn" type="submit">SEND MESSAGE</button>
+            </form>
+          </div>
+          <div id="my-details-container">
+            <h3>Get In touch</h3>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+
+            <h3>My Address</h3>
+            <div class="my-details-info-container">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Delhi, India</span>
+            </div>
+            <div class="my-details-info-container">
+              <i class="fas fa-mobile-alt"></i>
+              <span>9999999999</span>
+            </div>
+            <div class="my-details-info-container">
+              <i class="far fa-envelope"></i>
+              <span>myemail@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center social-icons">
+          <ul class="horizontal-list">
+            <li>
+              <a href="http://linkedin.com/in/achyuth-salwa-37398b213">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://stackoverflow.com/users/5608414/manisha?tab=profile"
+                target="_blank"
+              >
+                <i class="fab fa-stack-overflow"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://plus.google.com/u/0/103030702784925512939"
+                target="_blank"
+              >
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/manishakhattar54">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.quora.com/profile/Manisha-Khattar"
+                target="_blank"
+              >
+                <i class="fab fa-quora"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
-
